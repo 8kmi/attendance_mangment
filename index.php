@@ -15,12 +15,7 @@
 
     // $sessions = $connexion -> query("SELECT * FROM session where teacher_id = $currentUserId") -> fetchAll();
     $seances = $connexion->query("SELECT * FROM seance JOIN ue on ue.id = seance.ue_id AND seance.teacher_id = '$currentUserId';") -> fetchAll() ;
-
-    
-    
 ?>
-
-
 
   <div class="container-fluid mt-3">
       <div class="row d-flex justify-content-center">
